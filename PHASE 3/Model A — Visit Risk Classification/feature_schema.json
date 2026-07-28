@@ -1,0 +1,14 @@
+{
+    "age": "int64",
+    "chronic_flag": "int64",
+    "patient_visit_count": "int64",
+    "is_weekend_visit": "int64",
+    "gender_M": "bool",
+    "department_ER": "bool",
+    "department_General": "bool",
+    "department_ICU": "bool",
+    "department_Neurology": "bool",
+    "department_Orthopedics": "bool",
+    "visit_type_ICU": "bool",
+    "visit_type_OPD": "bool"
+}
