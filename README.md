@@ -73,9 +73,24 @@ Establishes the trusted data foundation for downstream modeling.
 
 ---
 
+
+## 🔬 Model Limitations & Future Improvements
+During final testing and evaluation, the Claim Outcome Classification model (Model B) demonstrated weak recall for successfully identifying "Rejected" claims. Because missed rejections directly impact hospital revenue and cash flow predictability, this specific model should remain in an experimental phase in a real-world scenario until features and validation improve.
+
+### Future Optimization Roadmap:
+
+### Enhanced Feature Engineering: Incorporate deeper interaction features (e.g., bill_amount vs department averages) to better capture rejection patterns.
+
+### Advanced Resampling Strategy: Apply SMOTE combined with more aggressive undersampling techniques to better handle severe class imbalances in the claims data.
+
+### Hyperparameter Tuning: Adjust class weights to heavily penalize false negatives on rejected claims, ensuring the finance team can fully rely on it as a robust revenue-protection tool.
+
+---
+
 ## ⚠️ Important Note on Model Artifacts
 Due to GitHub's strict file size limit of 100MB per file, the uncompressed `risk_model.joblib` file (which exceeds 100MB) has been compressed. 
 * You will find it saved as **`risk_model_joblib.zip`** inside both the `PHASE 3/Model A — Visit Risk Classification/` folder and the `PHASE 5/` folder. 
 * **To run the code locally or build the Docker container:** Please extract `risk_model_joblib.zip` in its respective directory so the `.joblib` file is accessible to the scripts.
-
 ---
+## 🏆 Acknowledgements
+This project was successfully completed as the capstone for the IITM Pravartak Advanced Certificate Programme in Applied Artificial Intelligence and Machine Learning (Graded 100/100)
